@@ -12,6 +12,8 @@ public class Ball : MonoBehaviour
     [SerializeField] float launchRandomValueYMin;
     [SerializeField] float launchRandomValueYMax;
 
+    [SerializeField] float speed;
+
     private bool hasStarted;
 
     //state
@@ -27,6 +29,8 @@ public class Ball : MonoBehaviour
     
     void Update()
     {
+        rb.velocity = speed * (rb.velocity.normalized);
+
         if (hasStarted == false)
         {
             LockBallToPaddle();
