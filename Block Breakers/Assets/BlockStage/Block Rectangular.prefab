@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 114217020728262076}
   m_Layer: 0
   m_Name: Block Rectangular
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,3 +143,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   breakSounds:
   - {fileID: 8300000, guid: d422896e92ee46246a83f67d438e0314, type: 3}
+  blockEffect: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
+  maxHits: 1
+  timesHits: 0

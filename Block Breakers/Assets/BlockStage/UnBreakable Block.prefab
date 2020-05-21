@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 5889883461395264395}
   - component: {fileID: 2924996407705745919}
   - component: {fileID: 8291824111239756314}
-  - component: {fileID: 114460315479228568}
   m_Layer: 0
-  m_Name: Block Rectangular 1
-  m_TagString: Block
+  m_Name: UnBreakable Block
+  m_TagString: Unbreakable Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +71,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6adf28cf6b22a62408063f90098252c4, type: 3}
-  m_Color: {r: 0.5693234, g: 0.2285066, b: 0.745283, a: 1}
+  m_Color: {r: 0.20680003, g: 0.18934673, b: 0.21698111, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -129,20 +128,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &114460315479228568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7897996787612774784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b7f6190d496cf8458625dc4aa872674, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  breakSounds:
-  - {fileID: 8300000, guid: d422896e92ee46246a83f67d438e0314, type: 3}
-  blockEffect: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c, type: 3}
-  maxHits: 1
-  timesHits: 0

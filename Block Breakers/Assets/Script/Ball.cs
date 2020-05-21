@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class Ball : MonoBehaviour
@@ -14,6 +13,7 @@ public class Ball : MonoBehaviour
     [SerializeField] float launchRandomValueYMax;
 
     [SerializeField] float speed;
+    [SerializeField] float randomFactor = 0.2f;
 
     private bool hasStarted;
 
@@ -61,11 +61,17 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Vector2 velocityTweak = new Vector2
+            (Random.Range(0f,randomFactor)
+            ,Random.Range(0f,randomFactor));
+
         if (hasStarted == true)
         {
             AudioClip clip = ballSounds[Random.Range(0,ballSounds.Length)];
             
             myAudiosource.PlayOneShot(clip);
+
+            rb.velocity += velocityTweak;
         }
 
     }

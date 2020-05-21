@@ -17,6 +17,7 @@ public class SceneLoader : MonoBehaviour
 
     public void loadStartScene()
     {
+        GetComponent<GameStatus>().ResetGame();
         SceneManager.LoadScene(0);
     }
     public void Quit()
